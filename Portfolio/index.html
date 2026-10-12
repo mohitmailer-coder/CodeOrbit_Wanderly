@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mohit Singh – .NET Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mohit Singh, entry-level .NET full stack developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Literata:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="side-top">
+        <h1>Mohit Singh</h1>
+        <p class="role">.NET Full Stack Developer</p>
+        <p class="tag">
+          Entry-level developer from Ghaziabad who builds web apps with C# and
+          ASP.NET.
+        </p>
+      </div>
+
+      <nav aria-label="Main">
+        <a href="#about" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="side-bottom">
+        <a
+          href="https://github.com/mohitmailer-coder"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mohit-singh-b31117317"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <button id="theme" type="button" aria-label="Switch colour theme">
+          Dark mode
+        </button>
+      </div>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p class="lead">
+          I'm a BCA graduate from HRIT University, and I'm looking for my first
+          role as a .NET full stack developer.
+        </p>
+        <p>
+          I started with the basics of C# and web development, and now I build
+          small full stack projects to practise what I learn. I like breaking a
+          problem into small steps, writing code I can read again next month,
+          and asking questions early.
+        </p>
+        <p>
+          Outside of code, I play cricket and watch movies. I speak Hindi and
+          English.
+        </p>
+        <dl class="facts">
+          <div>
+            <dt>Education</dt>
+            <dd>BCA, HRIT University</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Ghaziabad, India</dd>
+          </div>
+          <div>
+            <dt>Looking for</dt>
+            <dd>Entry-level .NET role or internship</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <div>
+            <h3>Backend</h3>
+            <ul>
+              <li>C#</li>
+              <li>.NET</li>
+              <li>ASP.NET</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Database</h3>
+            <ul>
+              <li>SQL Server</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul>
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+          <div>
+            <h3>FoodieHub</h3>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              A food ordering web app where users browse dishes, add them to a
+              cart and place an order.
+            </p>
+            <a
+              href="https://github.com/mohitmailer-coder"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on GitHub"
+            >
+          </div>
+        </article>
+        <article class="project">
+          <div>
+            <h3>RaktSetu</h3>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              A blood donation platform that connects donors with people who
+              need blood quickly.
+            </p>
+            <a
+              href="https://github.com/mohitmailer-coder"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on GitHub"
+            >
+          </div>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="lead">Have a role or project in mind? Send me a message.</p>
+        <p>
+          You can also write to
+          <a href="mailto:mohitmailer@gmail.com">mohitmailer@gmail.com</a>.
+        </p>
+        <form id="form" novalidate>
+          <label for="name">Your name</label>
+          <input type="text" id="name" autocomplete="name" />
+          <label for="message">Your message</label>
+          <textarea id="message"></textarea>
+          <button type="submit">Send message</button>
+          <p id="msg" role="status"></p>
+        </form>
+      </section>
+
+      <footer>© 2026 Mohit Singh</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
