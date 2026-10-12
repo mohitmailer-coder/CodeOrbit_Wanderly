@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 15px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Input design */
+input {
+    padding: 14px;
+    width: 250px;
+    max-width: 65%;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Add button */
+button {
+    padding: 14px 18px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5145cd;
+    transform: translateY(-2px);
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 450px;
+}
+
+li {
+    background: white;
+    color: #333;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateY(-3px);
+}
+
+/* Task text */
+li span {
+    flex: 1;
+    text-align: left;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+/* Completed task */
+.done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #ff4d6d;
+    padding: 9px 12px;
+}
+
+.delete-btn:hover {
+    background: #d90429;
+}
+
+/* Mobile design */
+@media (max-width: 480px) {
+    body {
+        padding-top: 35px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
